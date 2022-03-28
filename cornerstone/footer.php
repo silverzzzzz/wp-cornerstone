@@ -10,8 +10,8 @@
         'fallback_cb' => ''
         ) ); ?>
     </div>
-    <div class="copyrightsection theme_bg_color ">
-		  <a href="<?php echo home_url() ?>"><p id="copyright">Copyright ©<?php bloginfo( 'name' ); ?> All Rights Reserved.</p></a>
+    <div class="copyright">
+		  <a href="<?php echo home_url() ?>"><p>Copyright ©<?php bloginfo( 'name' ); ?> All Rights Reserved.</p></a>
     </div>
   </div>
 </footer>

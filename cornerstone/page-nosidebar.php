@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: デフォルト
+ * Template Name: サイドバーなし
  * Description:サイドバーあり,タイトルエリアあり
  */
 get_header(); ?>
@@ -12,10 +12,10 @@ get_header(); ?>
       the_post();
   ?>
   <!-- タイトルを出力 -->
-  <div class="page-title-area"><!--固定ページタイトルエリア-->
+  <div class="page-maintitle-area"><!--固定ページタイトルエリア-->
     <?php the_title('<h1 id="page-title">','</h1>'); ?>
   </div>
-  <div class="page-containner">
+  <div class="uk-container page-containner">
     <main id="page-main" <?php post_class(); ?> role="main">
       <div class="page-entry-body">
         <?php the_content(); ?>
@@ -26,7 +26,6 @@ get_header(); ?>
       ?>
     </main>
     <aside id="page-sidebar" role="complementary"><!--サイドバーセクション-->
-      <?php get_search_form(); ?>
       <?php get_sidebar( get_post_type() ); ?>
     </aside>
   </div>

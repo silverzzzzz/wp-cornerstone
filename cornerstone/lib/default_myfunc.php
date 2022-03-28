@@ -22,12 +22,10 @@ add_action( 'after_setup_theme', 'my_setup' );
  * @codex https://wpdocs.osdn.jp/%E3%83%8A%E3%83%93%E3%82%B2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC
  *====================*/
 function my_script_init() {
-  wp_enqueue_style( 'ress', get_template_directory_uri() . '/css/ress.css', array(), '1.0.0', 'all' );//ressの読み込み
-  wp_enqueue_style( 'themestyle', get_template_directory_uri() . '/css/theme_default.css', array(), '1.0.2', 'all' );//テーマデフォルトCSSの読み込み
+  wp_enqueue_style( 'ress', get_template_directory_uri() . '/css/ress-min.css', array(), '1.0.0', 'all' );//ressの読み込み
+  wp_enqueue_style( 'themestyle', get_template_directory_uri() . '/css/theme-default.css', array(), '1.0.2', 'all' );//テーマデフォルトCSSの読み込み
   wp_enqueue_style( 'style', get_stylesheet_uri(), array(),filemtime( get_template_directory() . '/style.css') );//Stylecssの読み込み
   wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'),true );//Scriptの読み込み
-  wp_enqueue_script( 'prismjs', get_template_directory_uri() . '/js/prism/prism.js', array(),true );//Prismの読み込み
-  wp_enqueue_style( 'prismcss', get_template_directory_uri() . '/js/prism/prism.css', array(), false, 'all' );//Prismの読み込み
 }
 add_action( 'wp_enqueue_scripts', 'my_script_init' );
 /*===========

@@ -1,11 +1,73 @@
 @charset "UTF-8";
 /*
-Theme Name:
+Theme Name: cornerstone
 Description:
 Theme URI:
-Author: silver
+Author:silver
 Author URI:
 Version: 0.9
 License: license
 License URI:
 */
+/*=====
+Header
+======*/
+.header-logo {
+  text-align: center;
+  margin: 0;
+  padding: 0.6rem 0;
+  background: #333;
+}
+.header-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+/*=====
+Footer
+======*/
+#footer {
+  background-color: #333;
+}
+.copyright a {
+  text-decoration: none;
+}
+.copyright p {
+  color: #fff;
+  text-align: center;
+}
+/*=======
+ページ
+========*/
+.page-containner {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+.page-title-area {
+  text-align: center;
+  margin: 1rem auto;
+}
+#page-main {
+  max-width: 1000px;
+  padding-right: 1rem;
+}
+#page-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 960px) {
+  .page-containner {
+    padding: 1rem 18px;
+    flex-direction: column;
+  }
+  #page-main {
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+  #page-sidebar {
+    width: 100%;
+  }
+}
+/*========
+Sidebar
+=========*/

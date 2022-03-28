@@ -11,13 +11,9 @@
   <div class="header-inner">
     <div class="drawer">
 			<div class="header-logo"><a href="<?php echo esc_url(home_url('/')) ?>"><h1><?php bloginfo( 'name' ); ?></h1></a></div>
-			<div class="Toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 		</div>
 		<?php
+			/*
 			wp_nav_menu( array(
 				'theme_location' => 'headermenu',
 				'menu_class'      => '',
@@ -26,13 +22,7 @@
 				'container_id' => 'nav-content',
 				'depth'          => 1,
 			) );
+			*/
 		?>
 	</div>
 </header>
-<script>
-  (function($){
-		$('.Toggle').click(function() {
-			$(this).toggleClass('active');
-			$('.menu').toggleClass('open');});
-	})(jQuery);
-</script>
